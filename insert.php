@@ -11,7 +11,7 @@
 
   //３．データ登録SQL作成
   // 1. SQL文を用意
-  $stmt = $pdo->prepare("INSERT INTO
+  $stmt = $pdo->prepare('"INSERT INTO
                       gs_bm2_table(
                           id, saunaname, saunaurl, saunareview, indate)
                       VALUES (NULL, :saunaname, :saunaurl, :saunareview, sysdate()
